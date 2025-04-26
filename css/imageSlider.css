@@ -1,0 +1,48 @@
+.image-slider-container {
+  top: 0;
+  left: 0;
+  height: 100vh;
+  height: 100svh;
+  display: flex;
+  transform: translateX(0);
+  transition: transform 2s;
+}
+
+div[class^="arrow"] {
+  color: white;
+  font-family: "Marbre Sans Bold";
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(50%);
+  font-size: 6rem;
+  text-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  cursor: pointer;
+}
+
+div[class^="arrow"]:hover {
+  color: #c65200;
+}
+
+div.arrow-left {
+  left: 40px;
+}
+
+div.arrow-right {
+  right: 40px;
+}
+
+@media (max-width: 1000px) {
+  
+  div[class^="arrow"] {
+    bottom: 0%;
+    transform: none;
+  }
+
+  div.arrow-left {
+    left: 20px;
+  }
+  
+  div.arrow-right {
+    right: 20px;
+  }
+}

@@ -1,0 +1,31 @@
+header {
+  position: sticky;
+  top: 0;
+  background-color: #022c2a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+main {
+  flex-grow: 1;
+  padding: 40px;
+  overflow: auto;
+}
+
+h1 {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1000px) {
+  
+  header {
+    align-items: baseline;
+    padding: 20px;
+  }
+
+  main {
+    padding: 40px 20px;
+  }
+}

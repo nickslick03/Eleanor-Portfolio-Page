@@ -1,0 +1,24 @@
+main>img {
+  float: left;
+  margin: 0 40px 5px 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+p {
+  line-height: 27px;
+  margin: 20px;
+  font-size: 1.2rem;
+  
+}
+
+@media (max-width: 1000px) {
+  
+  main h1 {
+    text-align: center;
+  }
+
+  main>img {
+    display: none;
+  }
+}

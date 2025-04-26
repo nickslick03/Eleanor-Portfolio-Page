@@ -1,0 +1,142 @@
+@font-face {
+  font-family: Marbre Sans Bold;
+  src: url(../Fonts/Marbre_Sans_Bold.otf);
+}
+
+@font-face {
+  font-family: Bitter;
+  src: url(../Fonts/Bitter-VariableFont_wght.ttf);
+}
+
+* {
+  font-family: "Bitter";
+  margin: 0;
+}
+
+body {
+  background-color: #022c2a;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header, h1, h2, h3, h4, h5, h6, a {
+  font-family: "Marbre Sans Bold";
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+#menu_button {
+  display: none;
+}
+
+nav {
+  font-size: 1.5rem;
+}
+
+nav>ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  padding: 0;
+}
+
+nav .x_button {
+  display: none;
+}
+
+.x_button:hover {
+    color: #c65200;
+}
+
+nav>ul>li {
+  list-style-type: none;
+}
+
+a:link, a:visited {
+  color: white;
+  list-style-type: none;
+}
+
+a:hover {
+  color: #c65200;
+}
+
+h2>a {
+  text-decoration: none;
+}
+
+h2>a:hover {
+  color: white;
+}
+
+main {
+  background-color: #ebebeb;
+  color: #022c2a;
+  flex-grow: 1;
+}
+
+footer {
+  font-size: 1rem;
+  padding: 25px 0;
+  text-align: center;
+  color: #cccccc;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+@media (max-width: 1000px) {
+  
+  #menu_button {
+    display: block;
+    height: 23px;
+  }
+
+  header>nav {
+    position: fixed;
+    z-index: 1;
+    height: 100vh;
+    height: 100dvh;
+    width: 100vw;
+    top: -100vh;
+    top: -100dvh;
+    left: 0;
+    margin: 0;
+    transition: transform 1s ease 0s;
+  }
+
+  header>nav>ul {
+    height: 100%;
+    padding: 20px 0;
+    box-sizing: border-box;
+    background-color: #022c2a;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .toggle_nav {
+    transform: translateY(100%);
+  }
+  
+  nav .x_button {
+    display: block;
+    font-size: 2rem;
+  }
+}
